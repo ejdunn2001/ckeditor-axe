@@ -1,0 +1,31 @@
+{
+  "name": "ckeditor-axe",
+  "version": "1.0.0",
+  "description": "aXe plugin for CKEditor",
+  "main": "axe/plugin.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/artemboyko43/ckeditor-axe.git"
+  },
+  "keywords": [
+    "CKEditor",
+    "aXe",
+    "Accessibility",
+    "axe-core"
+  ],
+  "files": [
+    "axe/",
+    "README.md",
+    "package.json"
+  ],
+  "author": "artemboyko43",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/artemboyko43/ckeditor-axe/issues"
+  },
+  "homepage": "https://github.com/artemboyko43/ckeditor-axe#readme",
+  "devDependencies": {
+    "axe-core": "^3.2.2",
+    "ckeditor-dev": "^4.11.4"
+  }
+}
