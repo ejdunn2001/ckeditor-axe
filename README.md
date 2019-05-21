@@ -1,1 +1,1 @@
-Pluging for providing programming interface to use axe-core in context of CKEDITOR
+Plugin for providing programming interface to use axe-core in context of CKEDITOR
