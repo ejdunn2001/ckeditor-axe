@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>A Simple Page with CKEditor</title>
+        <!-- Make sure the path to CKEditor is correct. -->
+        <script src="../node_modules/axe-core/axe.min.js"></script>
+        <script src="../node_modules/ckeditor-dev/ckeditor.js"></script>
+    </head>
+    <body>
+        <form>
+            <textarea name="editor1" id="editor1" rows="10" cols="80">
+                <p>This is my textarea to be replaced with CKEditor.</p>
+                <p><img src="https://upload.wikimedia.org/wikipedia/commons/c/c4/PM5544_with_non-PAL_signals.png" /></p>
+                <p>This is my textarea to be replaced with CKEditor.</p>
+            </textarea>
+<!--            @todo: We should also minified "dist" version of the script.-->
+            <script src="../src/test.js"></script>
+        </form>
+    </body>
+</html>
