@@ -1,8 +1,7 @@
 {
   "name": "ckeditor-axe",
-  "version": "1.0.0",
   "description": "aXe plugin for CKEditor",
-  "main": "axe/plugin.js",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/artemboyko43/ckeditor-axe.git"
@@ -14,9 +13,7 @@
     "axe-core"
   ],
   "files": [
-    "axe/",
-    "README.md",
-    "package.json"
+    "axe/"
   ],
   "author": "artemboyko43",
   "license": "UNLICENSED",
@@ -25,10 +22,9 @@
   },
   "homepage": "https://github.com/artemboyko43/ckeditor-axe#readme",
   "devDependencies": {
-    "@babel/core": "^7.4.5",
-    "@babel/preset-env": "^7.4.5",
     "axe-core": "^3.2.2",
-    "babel-core": "^7.0.0-bridge.0",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^10.0.1",
     "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.7.0",
@@ -37,13 +33,15 @@
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-babel": "^9.0.0",
     "eslint-config-prettier": "^4.3.0",
-    "eslint-plugin-flowtype": "^3.9.0",
+    "eslint-plugin-flowtype": "^3.9.1",
     "eslint-plugin-import": "^2.17.2",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-react": "^7.13.0",
-    "gulp": "^4.0.2",
-    "gulp-babel": "^8.0.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-uglify": "^3.0.2",
     "prettier": "^1.17.1"
   }
 }
