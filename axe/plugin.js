@@ -1,10 +1,23 @@
 "use strict";
 
-(function (CKEDITOR, axe, $) {
+(function (CKEDITOR, axe) {
   CKEDITOR.plugins.add("axe", {
-    icons: "axe",
+    // @todo: Investigate axe-core languages system.
+    lang: "en",
     // The plugin initialization logic goes inside this method.
     init: function init(editor) {
+      // @todo: Multilanguage.
+      var lang = editor.lang.axe;
+      // Create the toolbar button that executes the above command.
+      editor.ui.addButton("axe", {
+        label: lang.name,
+        command: "axe",
+        icon: this.path + "icons/axe.png",
+        // According to other plugins - property "toolbar" should be added by default.
+        // @see plugins/about/plugin.js
+        toolbar: "others"
+      });
+
       // Define the editor command.
       editor.addCommand("axe", {
         // Define the function that will be fired when the command is executed.
@@ -52,11 +65,7 @@
             },
             rules: axeExcludedRules
           }, function (err, results) {
-            // Center a CKEditor on the screen.
-            // TODO Get ckeditor container id.
-            $([document.documentElement, document.body]).animate({
-              scrollTop: $("#cke_edit-body-0-value").offset().top
-            }, 2000);
+            // @todo: Center CKEditor on the screen without jQuery.
 
             // Get axe result.
             var axeResult = {};
@@ -80,13 +89,6 @@
           });
         }
       });
-
-      // Create the toolbar button that executes the above command.
-      editor.ui.addButton("axe", {
-        label: "axe",
-        command: "axe",
-        toolbar: "insert"
-      });
     }
   });
-})(CKEDITOR, axe, jQuery);
+})(CKEDITOR, axe);
